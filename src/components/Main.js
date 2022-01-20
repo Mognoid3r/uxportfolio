@@ -1,5 +1,5 @@
-import styled, { keyframes } from "styled-components";
-import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+// import { NavLink } from "react-router-dom";
 import { lazy, Suspense, useState } from "react";
 import { motion } from "framer-motion";
 import MainNav from '../subComponents/MainNav/MainNav'
@@ -7,7 +7,7 @@ import HomeBackgroundMain from '../components/HomeBackground/HomeBackgroundMain'
 
 
 //Components
-import { YinYang } from "./AllSvgs";
+// import { YinYang } from "./AllSvgs";
 import Intro from "./Intro";
 import Loading from "../subComponents/Loading";
 import { mediaQueries } from "./Themes";
@@ -53,46 +53,46 @@ const Container = styled.div`
   padding: 2rem;
 `;
 
-const rotate = keyframes`
-from {
-    transform: rotate(0) ;
-  }
-  to {
-    transform: rotate(360deg) ;
-  }
-`;
-const Center = styled.button`
-  position: absolute;
-  top: ${(props) => (props.click ? "85%" : "50%")};
-  left: ${(props) => (props.click ? "92%" : "50%")};
-  transform: translate(-50%, -50%);
-  border: none;
-  outline: none;
-  background: transparent;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 1s ease;
-  & > *:first-child {
-    animation: ${rotate} infinite 1.5s linear;
-  }
-  & > *:last-child {
-    display: ${(props) => (props.click ? "none" : "inline-block")};
-    padding-top: 1rem;
-  }
+// const rotate = keyframes`
+// from {
+//     transform: rotate(0) ;
+//   }
+//   to {
+//     transform: rotate(360deg) ;
+//   }
+// `;
+// const Center = styled.button`
+//   position: absolute;
+//   top: ${(props) => (props.click ? "85%" : "50%")};
+//   left: ${(props) => (props.click ? "92%" : "50%")};
+//   transform: translate(-50%, -50%);
+//   border: none;
+//   outline: none;
+//   background: transparent;
+//   cursor: pointer;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   transition: all 1s ease;
+//   & > *:first-child {
+//     animation: ${rotate} infinite 1.5s linear;
+//   }
+//   & > *:last-child {
+//     display: ${(props) => (props.click ? "none" : "inline-block")};
+//     padding-top: 1rem;
+//   }
 
-  @media only screen and (max-width: 50em) {
-    top: ${(props) => (props.click ? "90%" : "50%")};
-    left: ${(props) => (props.click ? "90%" : "50%")};
-    width: ${(props) => (props.click ? "80px" : "150px")};
-    height: ${(props) => (props.click ? "80px" : "150px")};
-  }
-  @media only screen and (max-width: 30em) {
-    width: ${(props) => (props.click ? "40px" : "150px")};
-    height: ${(props) => (props.click ? "40px" : "150px")};
-  }
-`;
+//   @media only screen and (max-width: 50em) {
+//     top: ${(props) => (props.click ? "90%" : "50%")};
+//     left: ${(props) => (props.click ? "90%" : "50%")};
+//     width: ${(props) => (props.click ? "80px" : "150px")};
+//     height: ${(props) => (props.click ? "80px" : "150px")};
+//   }
+//   @media only screen and (max-width: 30em) {
+//     width: ${(props) => (props.click ? "40px" : "150px")};
+//     height: ${(props) => (props.click ? "40px" : "150px")};
+//   }
+// `;
 
 // const Contact = styled(NavLink)`
 //   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
@@ -102,31 +102,31 @@ const Center = styled.button`
 //   text-decoration: none;
 //   z-index: 1;
 // `;
-const BLOG = styled(NavLink)`
-  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
-  position: absolute;
-  top: 50%;
-  right: calc(1rem + 2vw);
-  transform: rotate(90deg) translate(-50%, -50%);
-  z-index: 1;
+// const BLOG = styled(NavLink)`
+//   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
+//   position: absolute;
+//   top: 50%;
+//   right: calc(1rem + 2vw);
+//   transform: rotate(90deg) translate(-50%, -50%);
+//   z-index: 1;
 
-  text-decoration: none;
-  @media only screen and (max-width: 50em) {
-    text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
-  }
-`;
-const WORK = styled(NavLink)`
-  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
-  position: absolute;
-  top: 50%;
-  left: calc(1rem + 2vw);
-  transform: translate(-50%, -50%) rotate(-90deg);
-  z-index: 1;
-  text-decoration: none;
-  @media only screen and (max-width: 50em) {
-    text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
-  }
-`;
+//   text-decoration: none;
+//   @media only screen and (max-width: 50em) {
+//     text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
+//   }
+// `;
+// const WORK = styled(NavLink)`
+//   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
+//   position: absolute;
+//   top: 50%;
+//   left: calc(1rem + 2vw);
+//   transform: translate(-50%, -50%) rotate(-90deg);
+//   z-index: 1;
+//   text-decoration: none;
+//   @media only screen and (max-width: 50em) {
+//     text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
+//   }
+// `;
 const BottomBar = styled.div`
   position: absolute;
   bottom: 1rem;
@@ -138,15 +138,15 @@ const BottomBar = styled.div`
   justify-content: space-evenly;
 `;
 
-const ABOUT = styled(NavLink)`
-  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
-  text-decoration: none;
-  z-index: 1;
-`;
-const SKILLS = styled(NavLink)`
-  color: ${(props) => props.theme.text};
-  text-decoration: none;
-`;
+// const ABOUT = styled(NavLink)`
+//   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
+//   text-decoration: none;
+//   z-index: 1;
+// `;
+// const SKILLS = styled(NavLink)`
+//   color: ${(props) => props.theme.text};
+//   text-decoration: none;
+// `;
 
 
 const DarkDiv = styled.div`
@@ -184,8 +184,8 @@ Music by <a href="/users/wataboi-12344345/?tab=audio&amp;utm_source=link-attribu
 */
 
 const Main = () => {
-  const [click, setClick] = useState(false);
-  const [path, setpath] = useState("");
+  const [click] = useState(false);
+  const [path] = useState("");
 
   // const handleClick = () => setClick(!click);
 

@@ -3,8 +3,8 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import Earth from '../HomeBackground/Earth/index'
 import Moon from '../HomeBackground/MoonSurface/index'
-import Sky from '../../assets/Images/sky.jpg'
-import { Center } from "@react-three/drei";
+// import Sky from '../../assets/Images/sky.jpg'
+// import { Center } from "@react-three/drei";
 // import Header from '../../components/Header/index'
 
 
