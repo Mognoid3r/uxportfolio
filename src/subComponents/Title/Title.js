@@ -40,6 +40,7 @@ function Title ({text}) {
           <div className={style.titleWrapper} >
               <h1>{text}</h1>
           </div>
+          {/* eslint-disable-next-line no-sequences */}
           <div className={style.titleWrapper, style.cloneWrapper} >
               <h1>{text}</h1>
           </div>
