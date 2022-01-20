@@ -1,0 +1,27 @@
+
+    .titleContainer {
+        h1 {
+            // font-size: 90px;
+            margin: 0;
+            line-height: 1.1em;
+        }
+        position: relative;
+        // transform: rotate(-90deg);
+        --maskX: 0;
+        --maskY: 50
+    }
+    .titleWrapper {
+        color: #F7E801 ;
+        cursor: pointer;
+    }
+    .cloneWrapper {
+        position: absolute;
+        top: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        color:  #ffffff;
+        transition: all 0.8s cubic-bezier(0.165,0.84,0.44,1);
+        clip-path: polygon(0 0, calc(var(--maskX) * 1% + (var(--maskY) - 50) * .4%) 0, calc(var(--maskX) * 1% + (var(--maskY) - 50) * -.4%) 100%, 0 100%)          
+        // clip-path: polygon(0 calc(var(--maskX) * 1% + (var(--maskY) - 50) * .4%), 100% 0, 100% calc(var(--maskX) * 1% + (var(--maskY) - 50) * -.4%) , 0 100%)          
+    }
