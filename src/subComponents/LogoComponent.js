@@ -20,7 +20,7 @@ const Logo = styled.h1`
 `;
 
 const LogoComponent = (props) => {
-  return <Logo color={props.theme}>Lazy Proletariat</Logo>;
+  return <Logo color={props.theme}>UX Portfolio</Logo>;
 };
 
 export default LogoComponent;
