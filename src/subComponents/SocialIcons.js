@@ -123,7 +123,7 @@ const SocialIcons = (props) => {
           />
         </NavLink>
       </motion.div>
-      {/* <motion.div
+      <motion.div
         initial={{ transform: "scale(0)" }}
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: "spring", duration: 1, delay: 1.6 }}
@@ -144,7 +144,7 @@ const SocialIcons = (props) => {
             }
           />
         </NavLink>
-      </motion.div> */}
+      </motion.div>
 
       <Line
         initial={{ height: 0 }}
