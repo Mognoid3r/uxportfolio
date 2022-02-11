@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin, YouTube, Instagram } from "../components/AllSvgs";
+import { Github, Linkedin, YouTube, Instagram } from "../components/AllSvgs";
 
 import styled from "styled-components";
 import { motion } from "framer-motion";
